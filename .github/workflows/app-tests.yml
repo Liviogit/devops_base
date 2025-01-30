@@ -10,9 +10,9 @@ jobs:
       - uses: actions/checkout@v2         
 
       - name: Install dependencies        
-        working-directory: ch5/sample-app
+        working-directory: td5/scripts/sample-app
         run: npm install
 
       - name: Run tests                   
-        working-directory: ch5/sample-app
+        working-directory: td5/scripts/sample-app
         run: npm test
