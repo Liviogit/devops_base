@@ -16,14 +16,12 @@ module "iam_roles" {
 
   enable_iam_role_for_testing = true                            
 
-  # TODO: fill in your own repo name ici
   github_repo      = "Liviogit/devops_base" 
   lambda_base_name = "lambda-sample"                            
 
   enable_iam_role_for_plan  = true                                
   enable_iam_role_for_apply = true                                
 
-  # TODO: fill in your own bucket and table name ici
   tofu_state_bucket         = "fundamentals-of-devops-tofu-state" 
   tofu_state_dynamodb_table = "fundamentals-of-devops-tofu-state" 
 }
