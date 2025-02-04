@@ -3,14 +3,14 @@ provider "aws" {
 }
 
 module "oidc_provider" {
-  source = "github.com/Liviogit/devops_base//td5/scripts/tofu/modules/github-aws-oidc"
+  source = "./../../modules/github-aws-oidc"
 
   provider_url = "https://token.actions.githubusercontent.com" 
 
 }
 
 module "iam_roles" {
-  source = "github.com/Liviogit/devops_base//td5/scripts/tofu/modules/gh-actions-iam-roles"
+  source = "./../../modules/gh-actions-iam-roles" 
 
   name              = "lambda-sample"                           
   oidc_provider_arn = module.oidc_provider.oidc_provider_arn    
