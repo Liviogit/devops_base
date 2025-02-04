@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"iam_roles","Source":"../../modules/gh-actions-iam-roles","Dir":"../../modules/gh-actions-iam-roles"},{"Key":"oidc_provider","Source":"../../modules/github-aws-oidc","Dir":"../../modules/github-aws-oidc"}]}
